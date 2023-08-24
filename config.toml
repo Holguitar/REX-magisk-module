@@ -5,7 +5,7 @@ build-mindetach-module = false
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
-YouTube-REX]
+[YouTube-REX]
 build-mode = "both"
 patches-source = "YT-Advanced/ReX-patches"
 integrations-source = "YT-Advanced/ReX-integrations"

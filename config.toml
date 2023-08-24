@@ -5,19 +5,14 @@ build-mindetach-module = false
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
-[YouTube-Extended] 
-app-name = "YouTube"
+YouTube-REX]
+build-mode = "both"
 patches-source = "YT-Advanced/ReX-patches"
 integrations-source = "YT-Advanced/ReX-integrations"
-rv-brand = "YouTube ReVanced Advanced"
-build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/youtube-18-30-37-release/"
-[YouTube]
-enabled = false
-build-mode = "both"                                                   # 'both', 'apk' or 'module'
-excluded-patches = ""                                                 # space-seperated patches to exclude (multiline strings are not supported)
-included-patches = ""                                                 # space-seperated patches to include (non-excluded patches are included by default)
-version = "auto"                                                      # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
+cli-source = "inotia00/revanced-cli"
+rv-brand = "REX"
+excluded-patches = "custom-branding-icon-revancify-blue"
+included-patches = "custom-branding-icon-mmt"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 
 

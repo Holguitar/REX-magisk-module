@@ -1,6 +1,4 @@
-Music (arm64-v8a): 6.17.52  
-Music (arm-v7a): 6.17.52  
-Twitter: 10.5.0-release.1  
+Revanced-Extended: 18.33.40  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
 
@@ -8,15 +6,48 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for
 
 ---
 Changelog:  
-CLI: j-hc/revanced-cli-3.1.0-all.jar  
-Integrations: ReVanced/revanced-integrations-0.117.1.apk  
-Patches: ReVanced/revanced-patches-2.190.0.jar  
+CLI: inotia00/revanced-cli-3.1.4-all.jar  
+Integrations: inotia00/revanced-integrations-0.117.24.apk  
+Patches: inotia00/revanced-patches-2.190.24.jar  
 
-### [2.190.0](https://github.com/ReVanced/revanced-patches/compare/v2.189.0...v2.190.0) (2023-09-03)
-### Bug Fixes
-* **Infinity for Reddit - Spoof client:** Support latest version ([8a5311b](https://github.com/ReVanced/revanced-patches/commit/8a5311b1e645ca2aab1e416d647cf52bf0be6e7f))
-### Features
-* **Photomath:** Support latest version ([5a2cad0](https://github.com/ReVanced/revanced-patches/commit/5a2cad077f03880ee1417c5cfd448bbdea4c07e2))
-* **Twitch:** Support version `16.1.0` ([#2923](https://github.com/ReVanced/revanced-patches/issues/2923)) ([d9834a9](https://github.com/ReVanced/revanced-patches/commit/d9834a9abb43390af4cb33f5dd5a0e2d3b7060e2))
+YouTube
+==
+- feat(youtube/default-video-quality): add `Skip dummy segment` setting (Experimental Flags)
+- feat(youtube/litho-filter): commit reflected from official ReVanced
+- feat(youtube/video-id): removes unnecessary fingerprints
+- fix(youtube/disable-haptic-feedback): force close occurs in YouTube v18.27.36
+- fix(youtube/enable-minimized-playback): change the method by which patches are applied
+- fix(youtube/overlay-buttons): radio buttons in speed dialog always remember last selected value https://github.com/inotia00/ReVanced_Extended/issues/1484
+- fix(youtube/swipe-controls): auto brightness value is not loaded properly https://github.com/inotia00/ReVanced_Extended/issues/1483
+- rollback(youtube/hide-shorts-components): rollback hide the shorts shelf in search results (sometimes they hide the shorts section in the channel information)
+- feat(youtube/translations): update translation
+`Arabic`, `Brazilian`, `Bulgarian`, `Chinese Traditional`, `French`, `Hungarian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Russian`, `Spanish`, `Turkish`, `Ukrainian`, `Vietnamese`
+
+
+YouTube Music
+==
+- feat(music): add support version `v6.22.51`
+- feat(music/litho-filter): commit reflected from official ReVanced
+- feat(music/replace-cast-button): change setting description
+- feat(music/video-information): removes unnecessary fingerprints
+- fix(music/enable-playback-speed): radio buttons in speed dialog always remember last selected value https://github.com/inotia00/ReVanced_Extended/issues/1484
+- fix(music/hook-download-button): slightly improved action bar loading time
+- fix(music/player-type-hook): player type is not hooked properly
+- fix(music/return-youtube-dislike): wrong layout applied in RTL layout https://github.com/inotia00/ReVanced_Extended/issues/1475
+- feat(music/translations): update translation
+`Greek`, `Russian`
+
+
+Etc
+==
+- build: bump dependencies
+
+
+※ Compatible ReVanced Manager: [RVX Manager v1.10.3 (fork)](https://github.com/inotia00/revanced-manager/releases/tag/v1.10.3)
+[Crowdin translation]
+- [YouTube/European Countries](https://crowdin.com/project/revancedextendedeu)
+- [YouTube/Other Countries](https://crowdin.com/project/revancedextended)
+- [YT Music](https://crowdin.com/project/revanced-music-extended)
+
 
 ---  
